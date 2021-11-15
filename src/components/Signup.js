@@ -48,10 +48,10 @@ const Signup=() =>{
                 <input type="text" placeholder="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
                 <input type="password" placeholder="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
                                                                                    
-                <button className="btn waves-effect waves-light #64b5f6 blue darken-1" onClick={()=>userSignup()}>Signup</button>
+                <button style={{marginTop:"30px"}}  className="waves-effect waves-light btn #f57f17 yellow darken-4" onClick={()=>userSignup()}>Signup</button>
                 <br/><br/>
                 <h6>
-                    <Link to='/signin'>Already have an account ?</Link>
+                    <Link style={{color:"black"}} to='/signin'>Already have an account ?</Link>
                 </h6>
             </div>
         </div>

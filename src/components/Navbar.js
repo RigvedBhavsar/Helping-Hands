@@ -11,9 +11,11 @@ const Navbar = () => {
         if(state){
             return[
                 <li className="center"><Link to="/">Home</Link></li>,
-                <li className="center"><Link to="/about">About</Link></li>,
+                // <li className="center"><Link to="/about">About</Link></li>,
+                // <li className="center"><Link to="/contact">Contact</Link></li>,
+                <li><a className="center smoothscroll" style={{marginLeft:"" , cursor:"pointer"}} href="#about">About</a></li>,
+                <li><a className="center smoothscroll" style={{marginLeft:"" , cursor:"pointer"}} href="#contact">Contact</a></li>,
                 <li className="center"><Link to="/testimonial">Testimonial</Link></li>,
-                <li className="center"><Link to="/contact">Contact</Link></li>,
                 <li className="right" style={{cursor : "pointer" , marginRight:"10px"}}
                     onClick={() => {
                     localStorage.clear();
@@ -24,9 +26,11 @@ const Navbar = () => {
         }else{
             return[
                 <li className="center"><Link to="/">Home</Link></li>,
-                <li className="center"><Link to="/about">About</Link></li>,
+                // <li className="center"><Link to="/about">About</Link></li>,
+                // <li className="center"><Link to="/contact">Contact</Link></li>,
+                <li><a className="center smoothscroll" style={{marginLeft:"" , cursor:"pointer"}} href="#about">About</a></li>,
+                <li><a className="center smoothscroll" style={{marginLeft:"" , cursor:"pointer"}} href="#contact">Contact</a></li>,
                 <li className="center"><Link to="/testimonial">Testimonial</Link></li>,
-                <li className="center"><Link to="/contact">Contact</Link></li>,
                 <li className="right"> <Link to="/signin">Login</Link></li>
             ]
         }

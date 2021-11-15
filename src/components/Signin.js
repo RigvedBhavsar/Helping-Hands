@@ -49,10 +49,10 @@ const Signin = () => {
                 <h3>SIGN IN</h3>
                 <input type="text" placeholder="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
                 <input type="password" placeholder="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
-                <button className="btn waves-effect waves-light #64b5f6 blue darken-1" onClick={()=>userLogin()}>Login</button>
+                <button style={{marginTop:"30px"}} className="waves-effect waves-light btn #f57f17 yellow darken-4" onClick={()=>userLogin()}>Login</button>
                 <br/><br/>
                 <h6>
-                    <Link to='/signup'>Don't have an account ?</Link>
+                    <Link style={{color:"black"}} to='/signup'>Don't have an account ?</Link>
                 </h6>
             </div>
         </div>

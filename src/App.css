@@ -64,3 +64,340 @@
 .collection-item{
     width: 100%;
 }
+
+/* Brand Logo Font */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+/* Heading Font */
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+
+/*  */
+
+/* Home page */
+.home {
+    position: relative;
+    height: 100%;
+    min-height: 699px;
+    width: 100%;
+    background: #161415 url(./images/header-background.jpg) no-repeat center;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Buttons On Home Screen */
+.home-button {
+    height: 75px;
+    padding-top: 9px;
+    width: 275px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* Font */
+.font {
+    font-family: 'Klee One', cursive;
+}
+
+/* Navbar */
+.navbar {
+    background-color: black !important;
+    background-image: none;
+}
+
+/* Brand Logo Font */
+#brand-logo {
+    font-family: 'Architects Daughter', cursive;
+}
+
+/* Brand Logo Image */
+.brand-image {
+    margin-top: 10px;
+    height: 25px;
+}
+
+/* Css For Background */
+.back-all {
+    position: relative;
+    height: 100%;
+    /* min-height: 699px; */
+    width: 100%;
+    background: #21393b no-repeat center;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    /* text-align: center; */
+    overflow: hidden;
+}
+
+/* Login Signup Form */
+.my-card {
+    margin-top: 125px;
+}
+
+/* Form fields */
+.auth-card {
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+/* Form input field */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid#f57f17 !important;
+    box-shadow: 0 1px 0 0 #f57f17 !important;
+}
+
+/* Form password field */
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid #f57f17 !important;
+    box-shadow: 0 1px 0 0 #f57f17 !important;
+}
+
+.input-field-checkout input[type=text]:focus {
+    border-bottom: 1px solid black !important;
+    box-shadow: 0 1px 0 0 black !important;
+}
+
+/* Toast showing after login */
+#toast-container {
+    top: 55px !important;
+    left: auto !important;
+    right: 5% !important;
+}
+
+/* Icon Hover */
+.material-icons:hover {
+    cursor: pointer;
+}
+
+/* Whole About US */
+.about-us {
+    position: relative;
+    height: 100%;
+    min-height: 699px;
+    width: 100%;
+    background-size: cover !important;
+    background-color: black;
+    -webkit-background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* About Us Image */
+.aboutleft {
+    margin-top: 100px;
+    margin-left: 225px;
+    float: left;
+    height: 500px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+/* Image */
+.arms {
+    width: 110%;
+}
+
+/* About Us Information */
+.aboutright {
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-right: 150px;
+    text-align: left;
+    float: right;
+    height: 100%;
+    width: 40%;
+    font-size: 16px;
+    color: #f57f17;
+    border-left: 5px solid white;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+/* Whole Contact Us */
+.contact-us {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background: #161415 no-repeat center;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Contact Heading */
+.contact-Heading {
+    color: #f57f17;
+    font-family: 'Klee One', cursive;
+}
+
+/* Contact Form */
+.contact-left {
+    margin-top: 35px;
+    margin-left: 200px;
+    float: left;
+    height: 500px;
+    overflow: hidden;
+    width: 350px;
+    text-align: center;
+}
+
+/* Locations */
+.address-details {
+    color: white;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Location Icon */
+.location-icon {
+    color: #f57f17;
+    margin-left: -20px;
+}
+
+.contact-right {
+    margin-top: 20px;
+    margin-right: 200px;
+    text-align: left;
+    float: right;
+    width: 450px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+/* Form fields */
+.contact-auth-card {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+/* social links */
+.social-links {
+    text-align: left;
+}
+
+
+/* Footer */
+.footer {
+    background-color: black !important;
+    background-image: none;
+}
+
+.footer-links {
+    color: white;
+    cursor: pointer;
+}
+
+.footer-links:hover {
+    color: #f57f17;
+    background-color: black;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+/* -------------------------------------------------- */
+.Address-form {
+    text-align: left !important;
+}
+
+/* ------------ Admin --------------- */
+.AdminContainer {
+    display: flex;
+    margin-left: 2%;
+    max-height: 700px;
+    position: relative;
+}
+
+.AdminPanel {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 670px;
+    width: 98%;
+    background-color: white;
+    text-align: center;
+}
+
+/* -------------SideBar------------------ */
+.sidebar {
+    /* background-color: rgb(251, 251, 255); */
+    position: sticky;
+    top: 50px;
+    height: 100%;
+    background-color: #161415;
+    width: 17%;
+}
+
+.sidebarWrapper {
+    padding: 20px;
+    color: #555;
+}
+
+.sidebarMenu {
+    margin-bottom: 10px;
+}
+
+.sidebarTitle {
+    font-size: 20px;
+    color: rgb(187, 186, 186);
+}
+
+.sidebarList {
+    list-style: none;
+    padding: 5px;
+    color: #f57f17;
+}
+
+.sidebarListItem {
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #f57f17;
+
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+    background-color: rgb(240, 240, 255);
+    color: black;
+}
+
+.sidebarIcon {
+    margin-right: 5px;
+    font-size: 20px !important;
+}
+
+/* ---------UserList ------------------ */
+
+.UserListContainer {
+    background-color: rgb(231, 231, 231);
+    width: 80%;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 94%;
+    position: sticky;
+    top: 50px;
+    overflow-y: scroll;
+}
+
+.UserList {
+    margin: 20px 30px;
+    min-height: 700px;
+}
+
+.sectioInside {
+    margin-top: 10px;
+}
