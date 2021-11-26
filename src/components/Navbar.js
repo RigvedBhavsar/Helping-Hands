@@ -10,28 +10,23 @@ const Navbar = () => {
     const renderList=()=>{
         if(state){
             return[
-                <li className="center"><Link to="/">Home</Link></li>,
-                // <li className="center"><Link to="/about">About</Link></li>,
-                // <li className="center"><Link to="/contact">Contact</Link></li>,
+                <li className="center contact-Heading"><Link to="/">Helping Hands</Link></li>,
                 <li><a className="center smoothscroll" style={{marginLeft:"" , cursor:"pointer"}} href="#about">About</a></li>,
                 <li><a className="center smoothscroll" style={{marginLeft:"" , cursor:"pointer"}} href="#contact">Contact</a></li>,
-                <li className="center"><Link to="/testimonial">Testimonial</Link></li>,
+                <li className="center"><Link to="/donate">Donate</Link></li>,
                 <li className="right" style={{cursor : "pointer" , marginRight:"10px"}}
                     onClick={() => {
                     localStorage.clear();
                     dispatch({ type: "CLEAR" });
-                    history.push("/signin");
-                    }}>Logout </li>
+                    history.push("/");
+                    }}><i class="material-icons left">logout</i></li>
             ]
         }else{
             return[
-                <li className="center"><Link to="/">Home</Link></li>,
-                // <li className="center"><Link to="/about">About</Link></li>,
-                // <li className="center"><Link to="/contact">Contact</Link></li>,
+                <li className="center contact-Heading"><Link to="/">Helping Hands</Link></li>,
                 <li><a className="center smoothscroll" style={{marginLeft:"" , cursor:"pointer"}} href="#about">About</a></li>,
                 <li><a className="center smoothscroll" style={{marginLeft:"" , cursor:"pointer"}} href="#contact">Contact</a></li>,
-                <li className="center"><Link to="/testimonial">Testimonial</Link></li>,
-                <li className="right"> <Link to="/signin">Login</Link></li>
+                <li className="right"> <Link to="/signin"><i class="material-icons left">login</i></Link></li>
             ]
         }
     }

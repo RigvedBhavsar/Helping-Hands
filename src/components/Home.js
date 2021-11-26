@@ -24,10 +24,10 @@ const Home=() =>{
 
     return (
         <div className="home">
-            <div style={{ marginTop: "250px" }}>
-                <h1 style={{ color: "white", height: "55px" }}>NEED A NEW LOOK ?</h1>
-                <h4 style={{ color: "white" }} >WE ARE YOUR SOLUTION</h4>
-                <h5>We Want To Be Your Destination For Great Beauty</h5>
+            <div style={{ marginTop: "200px" }}>
+                <h4 className="home-Content" >Happiness is not so much in having as Sharing.</h4>
+                <h4 className="home-Content" >We make a living by what we get,</h4>
+                <h4 className="home-Content" >but we make a life by what we give.</h4>
             </div>
             <div style={{ marginTop: "100px" }}>
                 <ul>

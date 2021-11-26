@@ -9,6 +9,7 @@ import Signin from './components/Signin';
 import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/Contact';
+import Donation from './components/Donation';
 
 export const UserContext = createContext();
 
@@ -70,6 +71,9 @@ function App() {
 
                         <Route path="/signup">
                             <Signup/>
+                        </Route>
+                        <Route path="/donate">
+                            <Donation/>
                         </Route>
                     </Switch>
                 </BrowserRouter>

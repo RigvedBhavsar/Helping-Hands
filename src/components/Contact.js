@@ -61,10 +61,12 @@ const Contact = () => {
                         <i class="material-icons medium col location-icon">location_on</i>
                     </div>
                     <ul>
-                        <li><p className="address-details">Gharda Circle &nbsp; +91 0251 123456</p></li>
-                        <li><p className="address-details">Char Rasta &nbsp; +91 0251 230119</p></li>
-                        <li><p className="address-details">Manpada Road &nbsp; +91 0251 255058</p></li>
-                        <li><p className="address-details">Phadake Road &nbsp; +91 12345 67891</p></li>
+                        <li><p className="address-details">Model College</p></li>
+                        <li><p className="address-details">Khambalpada Road,</p></li>
+                        <li><p className="address-details">Thakurli, Dombivali East,</p></li>
+                        <li><p className="address-details">Kanchangoan, Maharashtra - 421201. </p></li>
+                        <li><p className="address-details">+91 88888 88888 </p></li>
+
                     </ul>
                     <div>
                         <div className="row">

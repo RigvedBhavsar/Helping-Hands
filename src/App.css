@@ -78,7 +78,7 @@
     height: 100%;
     min-height: 699px;
     width: 100%;
-    background: #161415 url(./images/header-background.jpg) no-repeat center;
+    background: #161415 url(./images/header-background.jpg) no-repeat center ;
     background-size: cover !important;
     -webkit-background-size: cover !important;
     text-align: center;
@@ -123,7 +123,7 @@
     height: 100%;
     /* min-height: 699px; */
     width: 100%;
-    background: #21393b no-repeat center;
+    background: #161415 no-repeat center;
     background-size: cover !important;
     -webkit-background-size: cover !important;
     /* text-align: center; */
@@ -176,13 +176,14 @@
 .about-us {
     position: relative;
     height: 100%;
-    min-height: 699px;
+    min-height: 399px;
     width: 100%;
     background-size: cover !important;
     background-color: black;
     -webkit-background-size: cover !important;
     text-align: center;
     overflow: hidden;
+    padding-top: 100px;
 }
 
 /* About Us Image */
@@ -235,7 +236,10 @@
     color: #f57f17;
     font-family: 'Klee One', cursive;
 }
-
+.home-Content{
+    color: white;
+    font-family: 'Klee One', cursive;
+}
 /* Contact Form */
 .contact-left {
     margin-top: 35px;
