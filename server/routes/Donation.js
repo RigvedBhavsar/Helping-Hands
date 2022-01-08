@@ -25,4 +25,15 @@ router.post('/addAppointment', requireLogin, (req, res) => {
         })
 })
 
+router.get('/alldonation', (req, res) => {
+    Donation.find()
+        .populate("tookBy", "_id email")
+        .then(list => {
+            res.json({ list })
+        }).catch(err => {
+            console.log(err);
+        })
+})
+
+
 module.exports= router;

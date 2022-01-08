@@ -78,6 +78,17 @@ router.post('/login',(req , res)=>{
     })
 })
 
+router.get('/allusers', (req, res) => {
+    User.find()
+        .select("-password")
+        .then(list => {
+            res.json({ list })
+        }).catch(err => {
+            console.log(err);
+        })
+})
+
+
 router.get('/check', requireLogin , (req, res, next)=>{
     res.json({Message:"Hello User Authencation is Working"})
 })

@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/Contact';
 import Donation from './components/Donation';
+import Admin from './components/Admin';
 
 export const UserContext = createContext();
 
@@ -75,6 +76,10 @@ function App() {
                         <Route path="/donate">
                             <Donation/>
                         </Route>
+                        <Route path="/admin">
+                            <Admin/>
+                        </Route>
+
                     </Switch>
                 </BrowserRouter>
             </div>
