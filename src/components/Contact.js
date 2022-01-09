@@ -8,7 +8,7 @@ const Contact = () => {
     const history = useHistory();
     const [toSend, setToSend] = useState({
         from_name: '',
-        to_name: 'prachiware15@gmail.com',
+        to_name: 'samikshamalage27.model@gmail.com',
         message: '',
         reply_to: '',
     });
@@ -19,10 +19,10 @@ const Contact = () => {
     const sendMail = (e) => {
         e.preventDefault();
         send(
-            "service_mzhg7mj",
-            "template_wu8bver",
+            "service_o43nlkj",
+            "template_5ayihmg",
             toSend,
-            "user_z5EBYAKlTKwrafbwsRneP"
+            "user_yM4bC3nEllpYwnFFI0E9B"
         )
             .then(
                 (result) => {
