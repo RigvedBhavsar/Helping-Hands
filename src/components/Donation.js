@@ -9,6 +9,7 @@ const Donation = () => {
 
     const history = useHistory();
     const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
     const [address, setAddress] = useState("");
     const [date, setDate] = useState(null);
     const [service, setService] = useState('');
@@ -22,6 +23,7 @@ const Donation = () => {
             },
             body: JSON.stringify({
                 name,
+                email,
                 address,
                 date,
                 service
@@ -59,6 +61,9 @@ const Donation = () => {
             <h4 className="font">Make Donation</h4>
             <div className="input-field">
                 <input type="text" value={name} placeholder="Donar Name" onChange={(e) => setName(e.target.value)} />
+            </div>
+            <div className="input-field">
+                <input type="text" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
             </div>
             <div className="input-field">
                 <input type="text" value={address} placeholder="Address" onChange={(e) => setAddress(e.target.value)} />
