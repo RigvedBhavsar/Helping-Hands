@@ -20,6 +20,7 @@ const donationSchema = new mongoose.Schema({
     },
 
     service:[ {type : String}],
+    ngo:[ {type : String}],
     tookBy: {
         type: ObjectId,
         ref: "User"

@@ -7,8 +7,8 @@ const {MJ_APIKEY_PUBLIC , MJ_APIKEY_PRIVATE} = require('../keys');
 const mailjet = require ('node-mailjet').connect(MJ_APIKEY_PUBLIC, MJ_APIKEY_PRIVATE);
 
 router.post('/addAppointment', requireLogin, async (req, res) => {
-    const { name, email, address, date, service } = req.body;
-    if (!name || !email || !address || !date || !service ) {
+    const { name, email, address, date, service, ngo } = req.body;
+    if (!name || !email || !address || !date || !service || !ngo ) {
         return res.status(422).json({ error: "please select all Fields" });
     }
     req.user.password = undefined;
@@ -38,6 +38,7 @@ router.post('/addAppointment', requireLogin, async (req, res) => {
         address,
         date,
         service,
+        ngo,
         tookBy: req.user
     })
     await donation.save().then(result => {

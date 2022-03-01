@@ -19,6 +19,8 @@ const Admin = () => {
         { field: "address", title: "Address" },
         { field: "service", title: "Donations" },
         { field: "date", title: "Date" },
+        { field: "ngo", title: "Ngo Name" },
+        
         // { field: "tookBy.email", title: "Email" }
     ];
 

@@ -13,6 +13,7 @@ const Donation = () => {
     const [address, setAddress] = useState("");
     const [date, setDate] = useState(null);
     const [service, setService] = useState('');
+    const [ngo, setNgo] = useState('');
 
     const makeAppointment = () => {
         fetch("/addAppointment", {
@@ -26,7 +27,8 @@ const Donation = () => {
                 email,
                 address,
                 date,
-                service
+                service,
+                ngo
             })
         }).then(res => res.json())
             .then(data => {
@@ -49,6 +51,15 @@ const Donation = () => {
             (option) => option.value
           );
           setService(value);
+    }
+
+    const handleNgoOptions= (event)=>
+    {
+        let value = Array.from(
+            event.target.selectedOptions,
+            (option) => option.value
+          );
+          setNgo(value);
     }
 
     useEffect(() => {
@@ -87,6 +98,19 @@ const Donation = () => {
                    
                 </select>
             </div>
+
+            <div className="input-field col s12">
+                <select value={ngo} multiple={true} onChange={handleNgoOptions}>
+                    <option value="" disabled selected>Select NGO</option>
+                    <option className="selectOption" value="NGO-1 ">NGO-1</option>
+                    <option value="  NGO-2 ">NGO-2</option>
+                    <option value="  NGO-3 ">NGO-3</option>
+                    <option value="  NGO-4 ">NGO-4</option>
+                    <option value="  NGO-5 ">NGO-5</option>
+                    <option value="  NGO-6 ">NGO-6</option>
+                </select>
+            </div>
+
             <div>
                 <DatePicker selected={date} dateformat='dd/MM/yy' minDate={new Date()} onChange={d => setDate(d)} placeholderText="Select Date" />
                 <h6 className="font">Timmig : 10 AM To 6 PM</h6>
