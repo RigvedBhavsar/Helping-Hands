@@ -102,12 +102,13 @@ const Donation = () => {
             <div className="input-field col s12">
                 <select value={ngo} multiple={true} onChange={handleNgoOptions}>
                     <option value="" disabled selected>Select NGO</option>
-                    <option className="selectOption" value="NGO-1 ">NGO-1</option>
-                    <option value="  NGO-2 ">NGO-2</option>
-                    <option value="  NGO-3 ">NGO-3</option>
-                    <option value="  NGO-4 ">NGO-4</option>
-                    <option value="  NGO-5 ">NGO-5</option>
-                    <option value="  NGO-6 ">NGO-6</option>
+                    <option className="selectOption" value="  Littlest Angels Orphan Home ">Littlest Angels Orphan Home</option>
+                    <option value="  Friendship Orphan Home ">Friendship Orphan Home</option>
+                    <option value="  Guidance Home ">Guidance Home</option>
+                    <option value="  Kindred Hearts Home ">Kindred Hearts Home</option>
+                    <option value="  Shepherd's Home Orphanage ">Shepherd's Home Orphanage</option>
+                    <option value="  White Lilly Home ">White Lilly Home</option>
+                    <option value="  Safe Harbor Orphan Home ">Safe Harbor Orphan Home</option>
                 </select>
             </div>
 
